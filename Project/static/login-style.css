@@ -1,16 +1,117 @@
-body {
-     font-family: Arial, sans-serif; 
-     text-align: center; 
-    }
-.container {
-     width: 300px; 
-     margin: auto; 
-     padding: 20px; 
-     border: 1px 
-     solid #ccc;
-     }
-input {
-     display: block; 
-     width: 100%; 
-     margin-bottom: 10px; 
-    }
+/* Reset e Fontes */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: linear-gradient(135deg, #667eea, #764ba2);
+     overflow: hidden;
+ }
+ 
+ .background {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 0%, transparent 20%);
+     z-index: -1;
+ }
+ 
+ .container {
+     width: 100%;
+     max-width: 400px;
+     padding: 20px;
+ }
+ 
+ .login-box {
+     background: rgba(255, 255, 255, 0.95);
+     backdrop-filter: blur(10px);
+     padding: 40px;
+     border-radius: 15px;
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+     text-align: center;
+     transition: transform 0.3s;
+ }
+ 
+ .login-box:hover {
+     transform: translateY(-5px);
+ }
+ 
+ h2 {
+     color: #333;
+     font-size: 28px;
+     margin-bottom: 10px;
+ }
+ 
+ .subtitle {
+     color: #666;
+     margin-bottom: 30px;
+     font-weight: 300;
+ }
+ 
+ .input-group {
+     position: relative;
+     margin-bottom: 20px;
+ }
+ 
+ .input-group input {
+     width: 100%;
+     padding: 15px 15px 15px 45px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     font-size: 16px;
+     transition: all 0.3s;
+ }
+ 
+ .input-group input:focus {
+     border-color: #667eea;
+     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+     outline: none;
+ }
+ 
+ .icon {
+     position: absolute;
+     left: 15px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: #777;
+ }
+ 
+ .btn-login {
+     width: 100%;
+     padding: 15px;
+     background: linear-gradient(to right, #667eea, #764ba2);
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+ 
+ .btn-login:hover {
+     background: linear-gradient(to right, #5a6fd1, #6a4298);
+     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+ }
+ 
+ .footer {
+     margin-top: 20px;
+     color: #666;
+ }
+ 
+ .link {
+     color: #667eea;
+     text-decoration: none;
+     font-weight: 500;
+     transition: color 0.3s;
+ }
+ 
+ .link:hover {
+     color: #764ba2;
+ }

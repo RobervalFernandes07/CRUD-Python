@@ -2,18 +2,34 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="./static/login-style.css">
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
-        <h2>Login</h2>
-        <form action="login.py" method="post">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <p>Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+        <div class="login-box">
+            <h2>Bem-vindo</h2>
+            <p class="subtitle">Faça login para continuar</p>
+            
+            <form action="/cgi-bin/login.py" method="post">
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <span class="icon">✉️</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <span class="icon">🔒</span>
+                </div>
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+            
+            <div class="footer">
+                <p>Não tem conta? <a href="cadastro.html" class="link">Crie uma agora</a></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

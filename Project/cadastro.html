@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
-    <link rel="stylesheet" href="">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/Project/static/cadastro-style.css">
 </head>
 <body>
     <div class="container">
         <h2>Cadastre-se</h2>
-        <form action="cadastro.py" method="post">
-            
-            <input type="text" name="nome" placeholder="Digite seu nome completo" required>
-            <input type="text" name="cpf" placeholder="Digite seu CPF" required>
-            <input type="text" name="tel" placeholder="Telefone" required>
+        <form action="/cgi-bin/cadastro.py" method="post">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
             <input type="number" name="idade" placeholder="Idade" required>
-            <input type="email" name="email" placeholder="Digite seu email" required>
-            <input type="password" name="senha" placeholder="escolha sua senha" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit">Cadastrar</button>
         </form>
-        <p>Já tem conta ? <a href="login.html">Faça seu login aqui</a></p>
+        <p>Já tem conta? <a href="login.html">Faça login aqui</a></p>
     </div>
 </body>
 </html>
