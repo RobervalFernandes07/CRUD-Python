@@ -5,6 +5,10 @@ def cadastrar():
     if db is None:
         return
 
+    nome = input("Digite seu nome:")
+    cpf = input("Digite seu CPF:")
+    tel = input("Digite seu telefone:")
+    idade = input("Digite sua idade:")
     email = input("Digite seu email: ")
     senha = input("Digite sua senha: ")
 
@@ -18,7 +22,7 @@ def cadastrar():
         print("❌ Este email já está cadastrado!")
     else:
         # Inserir o novo usuário
-        cursor.execute("INSERT INTO cliente (nome,cpf,telefone,idade,email, senha) VALUES (%s, %s,%s,%s,%s,%s)", (nome,cpf,tel,idade,email, senha))
+        cursor.execute("INSERT INTO cliente (nome,cpf,telefone,idade,email, senha) VALUES (%s, %s,%s,%s,%s,%s)", (nome,cpf,tel,idade,email,senha))
         db.commit()
         print("✅ Cadastro realizado com sucesso!")
 
