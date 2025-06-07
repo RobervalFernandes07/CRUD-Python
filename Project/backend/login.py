@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 from conecta import conectar
-import cgi
-import cgitb; cgitb.enable()  # Para mensagens de erro detalhadas
 
 print("Content-type: text/html\n")  # Cabeçalho HTTP obrigatório
 
